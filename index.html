@@ -4,47 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
         <section class="form-container">
             <form id="form">
-                <h1>Login</h1>
+                <h1>Create account</h1>
                 <div class="name-box">
                     <div>
-                        <label for="firt-name">First Name</label>
+                        <label for="firt-name">First Name <span class="check">*</span></label>
                         <input type="text" name="firt-name" id="firt-name" required>
                     </div>
                     <div>
-                        <label for="last-name">Last Name</label>
+                        <label for="last-name">Last Name <span class="check">*</span></label>
                         <input type="text" name="last-name" id="last-name" required>
                     </div>
                 </div>
             
                 <div class="email-box">
-                    <label for="email">Email</label>
+                    <label for="email">Email <span class="check">*</span></label>
                     <input type="text" name="email" id="email" required>
                 </div>
                 
                 <div class="gender-box">
-                    <div>
-                        <input type="checkbox" name="mas" id="mas">
-                        <label for="mas">Masculine</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="fem" id="fem">
-                        <label for="fem">Feminine</label>
+                    <span>Gender <span class="check">*</span></span>
+                    <div class="content">
+                        <div>
+                            <input type="radio" name="gender" id="mas" required>
+                            <label for="mas">Masculine</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="gender" id="fem">
+                            <label for="fem">Feminine</label>
+                        </div>
                     </div>
                 </div>
-                <div class="mensage-box">
-                    <label for="mensage">Mensage</label>
-                    <textarea name="mensage" id="mensage"></textarea>
+
+                <div class="password-box">
+                    <div>
+                        <label for="senha">Password <span class="check">*</span></label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="password-icons">
+                        <i id="eye" class="fa-solid fa-eye"></i>
+                        <i id="eye-disabled" class="fa-solid fa-eye-slash disabled"></i>
+                    </div>
                 </div>
 
                 <div class="consent-box">
                     <input type="checkbox" name="consent" id="consent" required>
-                    <label for="concent">Consent</span>
+                    <label for="concent">I agree to the Terms of Service and Privacy Policy <span class="check">*</span></label>
                 </div>
 
                 <input type="submit" value="Submit">
