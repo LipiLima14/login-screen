@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account</title>
+    <link rel="stylesheet" href="style.css">   
+    <script src="check-account.js"></script>
+</head>
+<body>
+    <main>
+        <section class="form-container">
+            <form id="form">
+                <h1>Create account</h1>
+                <div class="name-box">
+                    <div>
+                        <label for="first-name">First Name <span class="check">*</span></label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div>
+                        <label for="last-name">Last Name <span class="check">*</span></label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+                </div>
+            
+                <div class="email-box">
+                    <label for="email">Email <span class="check">*</span></label>
+                    <input type="text" name="email" id="email" required>
+                </div>
+                
+                <div class="gender-box">
+                    <span>Gender <span class="check">*</span></span>
+                    <div class="content">
+                        <div>
+                            <input type="radio" name="gender" id="mas" required>
+                            <label for="mas">Masculine</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="gender" id="fem">
+                            <label for="fem">Feminine</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="password-box">
+                    <div>
+                        <label for="senha">Password <span class="check">*</span></label>
+                        <input type="password" name="password" id="password" minlength="8" required>
+                    </div>
+                </div>
+
+                <div class="consent-box">
+                    <input type="checkbox" name="consent" id="consent" required>
+                    <label for="concent">I agree to the Terms of Service and Privacy Policy <span class="check">*</span></label>
+                </div>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <script src="create-account.js"></script>  
+</body>
+</html>
